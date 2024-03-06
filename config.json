@@ -1,22 +1,4 @@
 {
-  "0": "U",
-  "1": "p",
-  "2": "d",
-  "3": "a",
-  "4": "t",
-  "5": "e",
-  "6": " ",
-  "7": "c",
-  "8": "o",
-  "9": "n",
-  "10": "f",
-  "11": "i",
-  "12": "g",
-  "13": ".",
-  "14": "j",
-  "15": "s",
-  "16": "o",
-  "17": "n",
   "facebookAccount": {
     "email": "",
     "password": "",
@@ -36,16 +18,21 @@
   },
   "adminBot": [
     "100038488271414",
-    "100089118994023",
+    "61554779043032",
+    "",
     "100093144025872",
-    ""
+    "100071880593545",
+    "100089118994023",
+    "61553801128009",
+    "100094481120012",
+    "100088897770409"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "গাঞ্জা বাবা",
+  "nickNameBot": "tor bap",
   "prefix": "/",
   "database": {
     "type": "sqlite",
@@ -57,15 +44,15 @@
   "timeZone": "Asia/Ho_Chi_Minh",
   "credentials": {
     "gmailAccount": {
-      "email": "goatbot28gamil.com",
-      "clientId": "552344212361-ujv8mjve7ue0r20t5caem9a41o8il508.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//04KHgkn8_-_PfCgYIARAAGAQSNwF-L9Iro-cV9UkOYQjg6noVALzdmrnrL8rijCPS96WGrKoflqLkXr76iZiXezLunTbJAU1AxS4",
+      "email": "botrandom68@gmail.com",
+      "clientId": "407168939339-ni7uvp8054bpnht4280n6d3no4qrf3mv.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//041Aj0DBzlyxuCgYIARAAGAQSNwF-L9IrSJFfXahDmIC5CaNNthQwg0yT8ZrFaUUofZBR13qsh-nNBLi7_4LZMlZ00F8AiWo6Moo",
       "apiKey": ""
     },
     "gRecaptcha": {
-      "siteKey": "6LcjUNYnAAAAACJRnuYb4PH2C1ZlesOimLIcziSd",
-      "secretKey": "6LcjUNYnAAAAAMWhPUFOdbhYbmeHtYoWzrH4YUDQ"
+      "siteKey": "6LdtgYMoAAAAABS1V6_RlEsUXf7dNLIzbc4EPhbt",
+      "secretKey": "6LdtgYMoAAAAAKXtH5f06qZBq28VXXqOb6rOSGQ5"
     }
   },
   "dashBoard": {
@@ -83,13 +70,13 @@
     }
   },
   "autoRestart": {
-    "time": null,
+    "time": 3600000,
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
-    "enable": false,
-    "timeInterval": 180,
-    "url": "",
+    "enable": true,
+    "timeInterval": 500,
+    "url": "https://uptime.botrandom30.repl.co",
     "notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
   },
   "autoLoadScripts": {
@@ -102,10 +89,10 @@
   "autoReloginWhenChangeAccount": false,
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
-    "enable": true,
-    "timeRestart": 3600000,
-    "delayAfterStopListening": 2000,
-    "logNoti": true,
+    "disable": false,
+    "timeRestart": 0,
+    "delayAfterStopListening": 0,
+    "logNoti": false,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
   },
   "notiWhenListenMqttError": {
@@ -117,44 +104,4 @@
     },
     "telegram": {
       "enable": false,
-      "botToken": "",
-      "chatId": "",
-      "note": "Can send notifications to many chatId, separate by comma or space, example: \"123456789 987654321\" (without backslash)"
-    },
-    "discordHook": {
-      "enable": false,
-      "webhookUrl": "",
-      "note": "Can send notifications to many webhookUrl, separate by comma or space, example: \"https://discord.com/api/webhooks/123456789/123456789 https://discord.com/api/webhooks/987654321/987654321\" (without backslash)"
-    }
-  },
-  "hideNotiMessage": {
-    "commandNotFound": false,
-    "adminOnly": false,
-    "threadBanned": false,
-    "userBanned": false,
-    "needRoleToUseCmd": false
-  },
-  "logEvents": {
-    "disableAll": false,
-    "message": true,
-    "message_reaction": true,
-    "message_unsend": true,
-    "message_reply": true,
-    "event": true,
-    "read_receipt": false,
-    "typ": false,
-    "presence": false
-  },
-  "optionsFca": {
-    "forceLogin": true,
-    "listenEvents": true,
-    "updatePresence": true,
-    "listenTyping": true,
-    "logLevel": "error",
-    "selfListen": false,
-    "selfListenEvent": true,
-    "autoMarkDelivery": false,
-    "autoReconnect": false,
-    "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
-  }
-}
+      "botTok
